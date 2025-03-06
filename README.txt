@@ -2,7 +2,25 @@ Woocommerce - Información Nutricional Chile
 
 Descripción
 
-Este plugin permite a los dueños de tiendas en WooCommerce agregar información nutricional a sus productos, cumpliendo con la normativa chilena. Es ideal para negocios de alimentos y suplementos que necesitan mostrar tablas nutricionales detalladas en sus productos.
+**Información Nutricional Chile para WooCommerce - Cumple la Ley y Vende Más**
+
+¿Vendes productos alimenticios en Chile?  ¡Este plugin es esencial para ti!
+
+En Chile, la normativa de etiquetado nutricional es obligatoria y puede ser compleja.  **Información Nutricional Chile** simplifica este proceso en tu tienda WooCommerce.  Con este plugin podrás:
+
+*   **Añadir fácilmente:** Campos intuitivos para ingresar la información nutricional de cada producto (Energía, Proteínas, Grasas Totales, Grasas Saturadas, Grasas Monoinsaturadas, Grasas Poliinsaturadas, Colesterol, Hidratos de Carbono disponibles, Azúcares Totales, Sodio).
+*   **Mostrar una tabla nutricional profesional:**  Presenta la información nutricional de forma clara y atractiva en la página de cada producto, cumpliendo con los requisitos visuales de la normativa chilena.
+*   **Generar confianza en tus clientes:**  Ofrece transparencia y seguridad a tus compradores, mostrando la información nutricional que necesitan para tomar decisiones informadas.
+*   **Evita multas y problemas legales:**  Asegura que tu tienda online cumple con la legislación chilena vigente en materia de etiquetado nutricional.
+
+**Ideal para:**
+
+*   Tiendas de alimentos saludables y orgánicos.
+*   Supermercados online.
+*   Productores artesanales de alimentos.
+*   Cualquier tienda WooCommerce en Chile que venda productos comestibles.
+
+**¡Comienza a vender alimentos en Chile online sin preocupaciones!**  Instala Información Nutricional Chile y cumple con la ley de forma fácil y rápida.
 
 Características
 

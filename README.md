@@ -2,8 +2,8 @@
 
 **Versión:** 1.0.2  
 **Autor:** Tech4In  
-**Plugin URI:** https://tu-sitio.com/mi-plugin  
-**Author URI:** https://tu-sitio.com  
+**Plugin URI:** https://tech4in.com/producto/woocommerce-informacion-nutricional-chile/  
+**Author URI:** https://tech4in.com  
 **Text Domain:** woocommerce-informacion-nutricional-chile  
 **Domain Path:** /languages
 

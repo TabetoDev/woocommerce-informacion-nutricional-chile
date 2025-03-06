@@ -12,6 +12,44 @@
  * @package WP_Productos_Alimenticios_Chile
  */
 
+if ( ! function_exists( 'incw_fs' ) ) {
+    // Create a helper function for easy SDK access.
+    function incw_fs() {
+        global $incw_fs;
+
+        if ( ! isset( $incw_fs ) ) {
+            // Include Freemius SDK.
+            require_once dirname( __FILE__ ) . '/vendor/freemius/start.php';
+            $incw_fs = fs_dynamic_init( array(
+                'id'                  => '18131',
+                'slug'                => 'informacin-nutricional-chile-woocommerce',
+                'type'                => 'plugin',
+                'public_key'          => 'pk_13517f8bec693fefb5dd05bd9adb3',
+                'is_premium'          => true,
+                'is_premium_only'     => true,
+                'has_addons'          => false,
+                'has_paid_plans'      => true,
+                'is_org_compliant'    => false,
+                'trial'               => array(
+                    'days'               => 3,
+                    'is_require_payment' => true,
+                ),
+                'menu'                => array(
+                    'first-path'     => 'plugins.php',
+                    'support'        => false,
+                ),
+            ) );
+        }
+
+        return $incw_fs;
+    }
+
+    // Init Freemius.
+    incw_fs();
+    // Signal that SDK was initiated.
+    do_action( 'incw_fs_loaded' );
+}
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
