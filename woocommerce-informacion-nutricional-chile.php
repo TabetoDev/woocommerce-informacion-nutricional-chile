@@ -12,6 +12,10 @@
  * @package WP_Productos_Alimenticios_Chile
  */
 
+ if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 if ( ! function_exists( 'incw_fs' ) ) {
     // Create a helper function for easy SDK access.
     function incw_fs() {
@@ -48,10 +52,6 @@ if ( ! function_exists( 'incw_fs' ) ) {
     incw_fs();
     // Signal that SDK was initiated.
     do_action( 'incw_fs_loaded' );
-}
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
 }
 
 /**
