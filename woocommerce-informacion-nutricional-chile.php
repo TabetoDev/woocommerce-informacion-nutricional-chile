@@ -19,7 +19,7 @@ if ( ! function_exists( 'incw_fs' ) ) {
 
         if ( ! isset( $incw_fs ) ) {
             // Include Freemius SDK.
-            require_once dirname( __FILE__ ) . '/vendor/freemius/start.php';
+            require_once dirname( __FILE__ ) . '/freemius/start.php';
             $incw_fs = fs_dynamic_init( array(
                 'id'                  => '18131',
                 'slug'                => 'informacin-nutricional-chile-woocommerce',
