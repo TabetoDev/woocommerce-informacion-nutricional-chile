@@ -1,156 +1,198 @@
-/* Estilos para la información nutricional en el frontend - MODIFICADO */
+/* Estilos para la información nutricional en el frontend */
 
-.productos-alimenticios-chile-product-info {
-    margin-bottom: 20px;
-    font-family: sans-serif;
-    max-width: 75%; /* Ancho máximo del contenedor principal */
-    margin-left: auto; /* Centrar horizontalmente el contenedor */
-    margin-right: auto; /* Centrar horizontalmente el contenedor */
+/* Variables CSS */
+:root {
+    --color-principal: #333;
+    --color-fondo: #fff;
+    --color-borde: #ddd;
+    --fuente-principal: sans-serif;
+    --tamano-fuente-base: 0.95em;
 }
 
-/* --- Estilos para la Tabla Nutricional - MODIFICADO --- */
-.tabla-nutricional-container {
+.incw-productos-alimenticios-chile-product-info {
     margin-bottom: 20px;
-    background-color: none; /* Fondo blanco para el contenedor de la tabla nutricional */
-    padding: 15px; /* Añadido padding alrededor de la tabla para espacio interior */
-}
-
-.tabla-nutricional-3-columnas {
-    background-color: #ffffff;
-    width: auto;
-    border-collapse: collapse;
-    border: none; /* Eliminar borde general de la tabla, ahora el borde está en el contenedor */
-    border-bottom: 1px solid #ddd;
+    font-family: var(--fuente-principal);
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2; /* Ajustado margen inferior de la tabla */
 }
 
-.tabla-nutricional-3-columnas th,
-.tabla-nutricional-3-columnas td {
-    border: 1px solid #ddd; /* Bordes de celdas */
-    padding: 6px; /* Reducido un poco el padding de celdas */
+/* --- Estilos para la Tabla Nutricional --- */
+.incw-tabla-nutricional-container {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.incw-tabla-nutricional-3-columnas {
+    background-color: var(--color-fondo);
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid var(--color-borde);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.incw-tabla-nutricional-3-columnas th,
+.incw-tabla-nutricional-3-columnas td {
+    border: 1px solid var(--color-borde);
+    padding: 0.6em;
     text-align: left;
-    font-size: 0.95em; /* Ajuste de tamaño de fuente */
+    font-size: var(--tamano-fuente-base);
 }
 
-.tabla-nutricional-3-columnas thead tr:first-child th {
-    font-size: 1.1em; /* Ajuste de tamaño de fuente del título principal */
+.incw-tabla-nutricional-3-columnas thead tr:first-child th {
+    font-size: 1.1em;
     font-weight: bold;
     text-align: center;
-    background-color: #fff; /* Fondo blanco para el título principal */
-    border-bottom: 1px solid #ddd; /* Añadido borde inferior al título principal */
+    background-color: var(--color-fondo);
+    border-bottom: 1px solid var(--color-borde);
 }
 
-.tabla-nutricional-3-columnas thead tr:nth-child(2) th, /* Estilos para la segunda fila del encabezado (Porción:) */
-.tabla-nutricional-3-columnas thead tr:nth-child(3) th { /* Estilos para la tercera fila del encabezado (Porciones por envase:) */
-    font-weight: normal; /* Quitado negrita para subtítulos del encabezado */
+.incw-tabla-nutricional-3-columnas thead tr:nth-child(2) th,
+.incw-tabla-nutricional-3-columnas thead tr:nth-child(3) th {
+    font-weight: normal;
     text-align: center;
-    background-color: #fff; /* Fondo blanco para subtítulos */
-    border-bottom: 1px; /* Eliminado borde inferior de subtítulos */
-}
-
-
-.tabla-nutricional-3-columnas .encabezado-3-columnas th {
-    background-color: #dddddd; /* Fondo gris para la fila de encabezados 100g/Porción */
-    text-align: center;
-    font-weight: bold;
-    border-top: 1px solid #ddd; /* Añadido borde superior a la fila de encabezados 100g/Porción */
-    border-bottom: 1px solid #ddd; /* Añadido borde inferior a la fila de encabezados 100g/Porción */
-}
-
-
-.tabla-nutricional-3-columnas tbody tr:last-child td {
+    background-color: var(--color-fondo);
     border-bottom: none;
 }
 
-.tabla-nutricional-3-columnas tbody tr:last-child td h4 {
-    margin-top: 10px; /* Ajustado margen superior del título de ingredientes */
-    margin-bottom: 5px;
+.incw-tabla-nutricional-3-columnas .tabla-nutricional__header th {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.incw-tabla-nutricional-3-columnas tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.incw-tabla-nutricional-3-columnas tbody tr:last-child td h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     font-size: 1em;
     font-weight: bold;
 }
 
-.tabla-nutricional-3-columnas tbody tr:last-child td p.listado-ingredientes {
+.incw-tabla-nutricional-3-columnas tbody tr:last-child td p.listado-ingredientes {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 0.9em;
     white-space: pre-line;
 }
 
-
-/* --- Estilos para los Sellos de Advertencia - SIN CAMBIOS --- */
-.sellos-container {
+/* --- Estilos para los Sellos de Advertencia --- */
+.incw-sellos-container {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.sellos-container h4 {
+.incw-sellos-container h4 {
     font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
-.sellos-container img.sello-alto-en {
-    width: auto;
-    height: 90px; /* Reducido un poco la altura de los sellos */
-    margin: 5px;
+.incw-sellos-container img.incw-sello-alto-en {
+    width: 3cm; /* Ancho del sello */
+    height: 3cm; /* Alto del sello */
+    max-width: 3cm; /* Ancho máximo para mantener la responsividad */
+    max-height: 3cm; /* Alto máximo para mantener la responsividad */
+    margin: 0.5em;
     display: inline-block;
 }
 
-.sellos-container p {
+.incw-sellos-container p {
     font-style: italic;
     color: #777;
 }
 
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+    .incw-tabla-nutricional-3-columnas th,
+    .incw-tabla-nutricional-3-columnas td {
+        font-size: 0.8em;
+        padding: 0.4em;
+    }
 
-/* --- Estilos para la Tabla de Alérgenos - MODIFICADO --- */
-.tabla-alergenos-container {
-    width: 90%; /* Ocupa el 90% del ancho disponible */
-    max-width: 900px; /* Ancho máximo para evitar que se vea demasiado grande en pantallas grandes */
-    margin: 20px auto; /* Centra el contenedor horizontalmente */
-    background-color: none;
-    padding: none;
+    .incw-sellos-container img.incw-sello-alto-en {
+        width: 2.5cm; /* Ancho del sello en pantallas pequeñas */
+        height: 2.5cm; /* Alto del sello en pantallas pequeñas */
+        max-width: 2.5cm; /* Ancho máximo para mantener la responsividad */
+        max-height: 2.5cm; /* Alto máximo para mantener la responsividad */
+        margin: 0.3em;
+    }
+}
+
+/* --- Estilos para la Tabla de Alérgenos --- */
+.incw-tabla-alergenos-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: transparent;
+    padding: 0;
     border: none;
 }
 
-.tabla-alergenos-container h4 {
+.incw-tabla-alergenos-container h4 {
     font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
-
-.tabla-alergenos-3-columnas {
-    width: 100%; /* La tabla ocupa el 100% del ancho de su contenedor */
+.incw-tabla-alergenos-3-columnas {
+    width: 100%;
     border-collapse: collapse;
     border: none;
 }
 
-.tabla-alergenos-3-columnas th,
-.tabla-alergenos-3-columnas td {
-    border: 1px solid #ddd; /* Bordes de celdas */
-    padding: 6px; /* Reducido un poco el padding de celdas */
+.incw-tabla-alergenos-3-columnas th,
+.incw-tabla-alergenos-3-columnas td {
+    border: 1px solid var(--color-borde);
+    padding: 0.6em;
     text-align: left;
-    font-size: 0.95em; /* Ajuste de tamaño de fuente */
+    font-size: var(--tamano-fuente-base);
 }
 
-.tabla-alergenos-3-columnas thead tr th {
-    background-color: #f0f0f0; /* Fondo gris para la fila de encabezados Alérgeno/Ingrediente/Contaminación */
+.incw-tabla-alergenos-3-columnas thead tr th {
+    background-color: #f0f0f0;
     font-weight: bold;
     text-align: center;
-    border-top: 1px solid #ddd; /* Añadido borde superior al encabezado de alérgenos */
-    border-bottom: 1px solid #ddd; /* Añadido borde inferior al encabezado de alérgenos */
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
 }
 
-.tabla-alergenos-3-columnas tbody td:nth-child(2),
-.tabla-alergenos-3-columnas tbody td:nth-child(3) {
+/* .incw-tabla-alergenos-3-columnas tbody td:nth-child(2),
+.incw-tabla-alergenos-3-columnas tbody td:nth-child(3) {
+    text-align: center;
+} */
+
+.incw-tabla-alergenos-3-columnas tbody td:nth-child(2) {
     text-align: center;
 }
 
+.incw-tabla-alergenos-3-columnas tbody td:nth-child(3) {
+    text-align: center;
+}
 
-/* --- Estilos generales adicionales - SIN CAMBIOS --- */
-.productos-alimenticios-chile-product-info h4 {
-    margin-top: 15px;
-    margin-bottom: 10px;
+/* --- Estilos generales adicionales --- */
+.incw-productos-alimenticios-chile-product-info h4 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+    .incw-tabla-nutricional-3-columnas th,
+    .incw-tabla-nutricional-3-columnas td {
+        font-size: 0.8em;
+        padding: 0.4em;
+    }
+
+    .incw-sellos-container img.incw-sello-alto-en {
+        height: 70px;
+        margin: 0.3em;
+    }
 }
